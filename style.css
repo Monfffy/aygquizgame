@@ -57,33 +57,33 @@ html,body{
 	margin: 20px 0px;
 	font-size: 24px;
 	color: #fff;
-	justify-content: center;
-	align-items: center;
+	/*justify-content: center;
+	align-items: center;*/
 }
 .gaming .options>div{
 	margin: 10px 10px;
 	padding: 5px 10px;
 	color: #fff;
 	border-radius: 7px;
-	justify-content: center;
-	align-items: center;
+	/*justify-content: center;
+	align-items: center;*/
 }
 
 /*正确显示的颜色*/
 .correct{
 	background: green;
-	justify-content: center;
+	/*justify-content: center;
 	align-items: center;
 	display: flex;
-	overflow: hidden;
+	overflow: hidden;*/
 }
 /*错误显示的颜色*/
 .error{
 	background: red;
-	justify-content: center;
+	/*justify-content: center;
 	align-items: center;
 	display: flex;
-	overflow: hidden;
+	overflow: hidden;*/
 }
 
 /*结束页面*/

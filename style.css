@@ -55,6 +55,8 @@ html,body{
 	margin: 20px 0px;
 	font-size: 24px;
 	color: #fff;
+	justify-content: center;
+	align-items: center;
 }
 .gaming .options>div{
 	margin: 10px 10px;

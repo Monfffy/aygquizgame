@@ -15,7 +15,7 @@ $.get("dati.json",function(res){
 	tikuList = res
 })
 
-tikuList[0] = 
+/*tikuList[0] = 
 {
   "quiz" : "请问你是泥塑还是整肃?",
     "options" : [
@@ -31,7 +31,7 @@ tikuList[1] =
         "是",
         "必须是",],
       "answer" : 2
-}
+}*/
 
 //点击开始答题按钮切换页面
 $(".startBtn").click(function(e){

@@ -2,16 +2,16 @@
       {
       "quiz" : "Is AYG male or female?",
       "options" : [
-        "Male",
-        "Female",
+        "1. Male",
+        "2. Female",
       ],
       "answer" : 1
       },
       {
       "quiz" : "Is AYG male or female?",
       "options" : [
-        "Male",
-        "Female",
+        "1. Male",
+        "2. Female",
       ],
       "answer" : 2
       }

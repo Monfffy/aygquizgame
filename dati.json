@@ -1,18 +1,16 @@
-[
-      {
-      "quiz" : "Is AYG male or female?",
-      "options" : [
-        "1. Male",
-        "2. Female",
-      ],
+{
+  "quiz" : "Is AYG male or female?",
+    "options" : [
+        "Male",
+        "Female",],
       "answer" : 1
-      },
-      {
-      "quiz" : "Is AYG male or female?",
-      "options" : [
-        "1. Male",
-        "2. Female",
-      ],
+},
+
+{
+  "quiz" : "Is AYG male or female?",
+    "options" : [
+        "Male",
+        "Female",],
       "answer" : 2
-      }
-]
+}
+

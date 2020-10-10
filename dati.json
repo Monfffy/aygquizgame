@@ -5,7 +5,7 @@
         "Male",
         "Female",
       ],
-      "answer" : "1"
+      "answer" : 1
       },
       {
       "quiz" : "Is AYG male or female?",
@@ -13,6 +13,6 @@
         "Male",
         "Female",
       ],
-      "answer" : "0"
+      "answer" : 2
       }
 ]

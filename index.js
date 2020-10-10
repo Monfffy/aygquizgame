@@ -4,7 +4,7 @@ var score = 0;
 //是否还能继续选择
 var isChoose = false;
 //设置答题数量
-var num = 10;
+var num = 2;
 
 //ajax获取题目内容
 $.get("dati.json",function(res){

@@ -1,8 +1,18 @@
-{
+[
+      {
       "quiz" : "Is AYG male or female?",
       "options" : [
         "Male",
         "Female",
       ],
       "answer" : 1
-}
+      },
+      {
+      "quiz" : "Is AYG male or female?",
+      "options" : [
+        "Male",
+        "Female",
+      ],
+      "answer" : 0
+      }
+]

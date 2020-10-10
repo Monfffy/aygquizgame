@@ -15,6 +15,14 @@ $.get("dati.json",function(res){
 	tikuList = res
 })
 
+//点击开始答题按钮切换页面
+$(".startBtn").click(function(e){
+	$(".gaming").addClass("active")
+	$(".startGame").removeClass("active")
+	//每次点击随机出个题目并显示在页面上
+	randomRender()
+})
+
 tikuList[0] = 
 {
   "quiz" : "请问你是泥塑还是整肃?",
@@ -32,14 +40,6 @@ tikuList[1] =
         "必须是",],
       "answer" : 2
 }
-
-//点击开始答题按钮切换页面
-$(".startBtn").click(function(e){
-	$(".gaming").addClass("active")
-	$(".startGame").removeClass("active")
-	//每次点击随机出个题目并显示在页面上
-	randomRender()
-})
 
 function randomRender(){
 	//获取题库数组中，随机出的整数(pasetInt)索引值		parseInt方法       返回由字符串转换得到的整数。

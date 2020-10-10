@@ -1,20 +1,8 @@
 {
-  "quiz" : [
-    {
-      "timu" : "Is AYG male or female?",
+      "quiz" : "Is AYG male or female?",
       "options" : [
         "Male",
         "Female",
       ],
       "answer" : "Male"
-    },
-    {
-      "timu" : "Is AYG male or female?",
-      "options" : [
-        "Male",
-        "Female",
-      ],
-      "answer" : "Female"
-    }
- }
-    
+}

@@ -65,7 +65,6 @@ html,body{
 	padding: 5px 10px;
 	color: #fff;
 	border-radius: 7px;
-	display: flex;
 	justify-content: center;
 	align-items: center;
 }
@@ -73,10 +72,14 @@ html,body{
 /*正确显示的颜色*/
 .correct{
 	background: green;
+	justify-content: center;
+	align-items: center;
 }
 /*错误显示的颜色*/
 .error{
 	background: red;
+	justify-content: center;
+	align-items: center;
 }
 
 /*结束页面*/

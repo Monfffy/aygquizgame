@@ -15,6 +15,24 @@ $.get("dati.json",function(res){
 	tikuList = res
 })
 
+tikuList[0] = 
+{
+  "quiz" : "请问你是泥塑还是整肃?",
+    "options" : [
+        "是男的",
+        "是女的",],
+      "answer" : 1
+}
+
+tikuList[1] = 
+{
+  "quiz" : "请问阿云嘎是不是最可爱的?",
+    "options" : [
+        "是",
+        "必须是",],
+      "answer" : 2
+}
+
 //点击开始答题按钮切换页面
 $(".startBtn").click(function(e){
 	$(".gaming").addClass("active")

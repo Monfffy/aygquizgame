@@ -1,4 +1,4 @@
-*{
+{
 	margin: 0;
 	padding: 0;
 	/*设置不会因为内边距和 边框撑开宽度和高度*/
@@ -65,7 +65,10 @@ html,body{
 	padding: 5px 10px;
 	color: #fff;
 	border-radius: 7px;
+	justify-content: center;
+	align-items: center;
 }
+
 /*正确显示的颜色*/
 .correct{
 	background: green;
@@ -74,7 +77,6 @@ html,body{
 .error{
 	background: red;
 }
-
 
 /*结束页面*/
 .endGame{

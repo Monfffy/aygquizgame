@@ -74,12 +74,16 @@ html,body{
 	background: green;
 	justify-content: center;
 	align-items: center;
+	display: flex;
+	overflow: hidden;
 }
 /*错误显示的颜色*/
 .error{
 	background: red;
 	justify-content: center;
 	align-items: center;
+	display: flex;
+	overflow: hidden;
 }
 
 /*结束页面*/

@@ -125,6 +125,11 @@ html,body{
 .endGame h1{
 	margin: 40px;
 }
+.endImg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
 .reStart{
 	width: 200px;
 	height: 60px;

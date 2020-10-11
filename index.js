@@ -15,6 +15,12 @@ $.get("dati.json",function(res){
 	tikuList = res
 })
 
+//首页图片淡出
+$('img').click(function()
+	{
+	$('img').fadeOut(1000);
+	});
+
 //点击开始答题按钮切换页面
 $(".startBtn").click(function(e){
 	$(".gaming").addClass("active")

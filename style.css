@@ -29,6 +29,12 @@ html,body{
 	transform: translateX(0px) !important;
 }
 
+.img{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+
 .startGame{
 	display: flex;
 	justify-content: center;

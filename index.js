@@ -20,6 +20,11 @@ $(".firstImg").click(function(){
 	$(".firstImg").fadeOut(1000);
 	});
 
+//点击准备好了按钮切换页面
+$(".readyBtn").click(function(e){
+	$(".startGame").addClass("active")
+})
+
 //点击开始答题按钮切换页面
 $(".startBtn").click(function(e){
 	$(".gaming").addClass("active")

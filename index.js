@@ -16,8 +16,8 @@ $.get("dati.json",function(res){
 })
 
 //首页图片淡出
-$("firstImg").click(function(){
-	$("firstImg").fadeOut(1000);
+$(".firstImg").click(function(){
+	$(".firstImg").fadeOut(1000);
 	});
 
 //点击开始答题按钮切换页面

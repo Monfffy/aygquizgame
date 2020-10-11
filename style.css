@@ -126,11 +126,12 @@ html,body{
 	margin: 40px;
 }
 .endImg{
-	width: 375px;
+	width: 300px;
 	/*display: flex;
 	justify-content: center;
 	align-items: center;*/
-	bottom: 0;
+	/*bottom: 0;*/
+	vertical-align: bottom;
 	}
 .reStart{
 	width: 200px;

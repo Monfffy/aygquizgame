@@ -126,10 +126,11 @@ html,body{
 	margin: 40px;
 }
 .endImg{
-	width: 375px;
+	width: 300px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background: skyblue;
 	}
 .reStart{
 	width: 200px;

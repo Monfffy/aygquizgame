@@ -34,8 +34,29 @@ html,body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	object-fit: cover;
 	}
+
+.rule{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.rule h1{
+	margin: 40px;
+}
+.readyBtn{
+	width: 200px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 30px;
+	border: none;
+	background: green;
+	color: #fff;
+	/*阴影不进行偏移 */
+	box-shadow: 0 0 30px green;
+	border-radius: 10px;
+}
 
 .startGame{
 	display: flex;

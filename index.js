@@ -115,6 +115,11 @@ $(".options").click(function(e){
 	
 })
 
+//结束歌曲图片淡出
+$(".endImg").click(function(){
+	$(".endImg").fadeOut(1000);
+	});
+
 //点击重新答题按钮后,重新刷新页面进行重新答题
 $(".reStart").click(function(){
 	//location.reload()	DOM方法	刷新页面

@@ -126,6 +126,7 @@ html,body{
 	margin: 40px;
 }
 .endImg{
+	width: 375px;
 	display: flex;
 	justify-content: center;
 	align-items: center;

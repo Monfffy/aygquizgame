@@ -126,10 +126,13 @@ html,body{
 	margin: 40px;
 }
 .endImg{
-	width: 375px;
+	/*width: 375px;*/
 	/*display: flex;
 	justify-content: center;
 	align-items: center;*/
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
 	}
 .reStart{
 	width: 200px;

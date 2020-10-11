@@ -127,10 +127,9 @@ html,body{
 }
 .endImg{
 	width: 300px;
-	display: flex;
+	/*display: flex;
 	justify-content: center;
-	align-items: center;
-	background: skyblue;
+	align-items: center;*/
 	}
 .reStart{
 	width: 200px;

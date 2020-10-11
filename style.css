@@ -29,7 +29,7 @@ html,body{
 	transform: translateX(0px) !important;
 }
 
-.img{
+.firstImg{
 	display: flex;
 	justify-content: center;
 	align-items: center;

@@ -45,6 +45,12 @@ html,body{
 /*.rule h1{
 	margin: 40px;
 }*/
+.inputName{
+    width: 200px;
+	height: 60px;
+	font-size: 30px;
+	border: none;
+}
 .readyBtn{
 	width: 200px;
 	height: 60px;

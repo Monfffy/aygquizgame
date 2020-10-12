@@ -6,6 +6,9 @@ var isChoose = false;
 //设置答题数量
 var num = 2;
 
+//用户微博ID
+var inputName = "";
+
 //ajax获取题目内容
 $.get("dati.json",function(res){
 	//用了jquery相当于res = JSON.parse(res.responseText)
@@ -106,6 +109,9 @@ $(".options").click(function(e){
 				$(".endGame").addClass("active")
 				//获取得分标签,把上面累计的得分设置显示到页面上
 				$(".score").html(score);
+				//获取用户名,把用户名显示到页面上
+				inputName = $("#inputName").val();
+               			$(".inputName").html(inputName);
 			}else{
 				isChoose = false;
 				randomRender()

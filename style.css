@@ -50,8 +50,10 @@ html,body{
 	height: 60px;
 	font-size: 30px;
 	border: none;
+	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 }
 .readyBtn{
 	width: 200px;

@@ -46,10 +46,12 @@ html,body{
 	margin: 40px;
 }*/
 .inputName{
-    width: 200px;
+        width: 200px;
 	height: 60px;
 	font-size: 30px;
 	border: none;
+	justify-content: center;
+	align-items: center;
 }
 .readyBtn{
 	width: 200px;

@@ -35,7 +35,7 @@ $(".startBtn").click(function(e){
 
 tikuList[0] = 
 {
-  "quiz" : "请问你是最帅党还是最美党?",
+  "quiz" : "你是最帅党还是最美党?",
     "options" : [
         "阿云嘎最帅！",
         "阿云嘎最美！",
@@ -46,7 +46,7 @@ tikuList[0] =
 
 tikuList[1] = 
 {
-  "quiz" : "请问阿云嘎是不是最可爱的?",
+  "quiz" : "阿云嘎是不是最可爱的?",
     "options" : [
         "是",
         "必须是",

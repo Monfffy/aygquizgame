@@ -36,7 +36,7 @@ $(".startBtn").click(function(e){
 	randomRender()
 })
 
-tikuList[0] = 
+/*tikuList[0] = 
 {
   "quiz" : "你是最帅党还是最美党?",
     "options" : [
@@ -56,7 +56,7 @@ tikuList[1] =
         "肯定是",
         "对啊那不然呢"],
       "answer" : 4
-}
+}*/
 
 function randomRender(){
 	//获取题库数组中，随机出的整数(pasetInt)索引值		parseInt方法       返回由字符串转换得到的整数。

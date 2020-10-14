@@ -36,28 +36,6 @@ $(".startBtn").click(function(e){
 	randomRender()
 })
 
-/*tikuList[0] = 
-{
-  "quiz" : "你是最帅党还是最美党?",
-    "options" : [
-        "阿云嘎最帅！",
-        "阿云嘎最美！",
-        "阿云嘎是最可爱的啵啵蛋",
-        "看阿云嘎心情"],
-      "answer" : 1
-}
-
-tikuList[1] = 
-{
-  "quiz" : "阿云嘎是不是最可爱的?",
-    "options" : [
-        "是",
-        "必须是",
-        "肯定是",
-        "对啊那不然呢"],
-      "answer" : 4
-}*/
-
 function randomRender(){
 	//获取题库数组中，随机出的整数(pasetInt)索引值		parseInt方法       返回由字符串转换得到的整数。
 	var randomIndex = parseInt(Math.random()*tikuList.length);
@@ -72,9 +50,7 @@ function randomRender(){
 	//遍历题目对象字符串中的选择options内容           	   内容        索引
 	currentTimu.options.forEach(function(item,index){
 		$(".options").append(`<div data-index="${index}">${index+1}.${item}</div>`)
-	})
-	
-		
+	})		
 }
 
 //选项的点击事件
@@ -100,8 +76,7 @@ $(".options").click(function(e){
 		
 		//每点击一次,答题的数量减1
 		num --;
-		
-		
+			
 		//延迟一秒进行切换
 		setTimeout(function(){
 			//答题数量结束了,切换到结束页面,否则切换到下一题

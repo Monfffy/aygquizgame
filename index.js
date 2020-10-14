@@ -10,7 +10,8 @@ var num = 2;
 var inputName = "";
 
 //ajax获取题目内容
-$.get("dati.json",function(res){
+//$.get("dati.json",function(res){
+$.get("test.json",function(res){
 	//用了jquery相当于res = JSON.parse(res.responseText)
 	//自动获取响应数据以字符串形式返回，不用自己多写这一句
 	console.log(res)

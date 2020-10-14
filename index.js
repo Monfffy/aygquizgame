@@ -70,7 +70,7 @@ $(".options").click(function(e){
 			$("[data-index="+index+"]").addClass("correct")
 		}else{
 			var corectindex = currentTimu.answer-1;
-			//若点击的索引不对,把正确的背景颜色和错误的背景颜色都显示出来
+			//若点击的索引不对,把错误的背景颜色显示出来
 			//$("[data-index="+corectindex+"]").addClass("correct")
 			$("[data-index="+index+"]").addClass("error")
 		}

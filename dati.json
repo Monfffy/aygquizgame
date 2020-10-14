@@ -1,22 +1,28 @@
 [
   {
   "quiz" : "嘎嘎在2019内蒙电视台春晚开场时演唱骏马归来穿的是?",
+   "qimage" : "",
+   "qaudio" : "",
     "options" : [
         "白袍",
         "小紫",
         "锦绿",
         "蓝袍"
     ],
-      "answer" : 1
+      "answer" : 1,
+      "qstatus" : 1
   }, 
   {
   "quiz" : "歌曲《娜米达》间奏中没有出现的乐器是？",
+   "qimage" : "",
+   "qaudio" : "",
     "options" : [
         "长号",
         "圆号",
         "钢琴",
         "小号"
     ],
-      "answer" : 4
+      "answer" : 4,
+      "qstatus" : 3
   }
 ]

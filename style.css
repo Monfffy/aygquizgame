@@ -100,8 +100,10 @@ html,body{
 	align-items: center;*/
 }
 .gaming .qimg{
-  	width: 70px;
-  	height: 100px;
+  	width: 150px;
+  	height: 200px;
+	display: block;
+        margin: 0 auto;
 }
 .gaming .options>div{
 	margin: 10px 10px;

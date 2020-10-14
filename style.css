@@ -99,6 +99,10 @@ html,body{
 	/*justify-content: center;
 	align-items: center;*/
 }
+.gaming .qimg{
+  	width: 70px;
+  	height: 100px;
+}
 .gaming .options>div{
 	margin: 10px 10px;
 	padding: 10px 10px;

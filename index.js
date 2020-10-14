@@ -63,13 +63,13 @@ $(".options").click(function(e){
 		console.log(index+1);
 		//题目中的index是0开始,answer是1开始,所以要加一
 		//若答案与点击按钮的索引一致
-		if(currentTimu.answer==(index+1)){
+		if(currentTimu.qans==(index+1)){
 			qs = currentTimu.qstatus;
 			score += 10*qs;
 			//把获取的索引添加正确的背景颜色
 			$("[data-index="+index+"]").addClass("correct")
 		}else{
-			var corectindex = currentTimu.answer-1;
+			var corectindex = currentTimu.qans-1;
 			//若点击的索引不对,把错误的背景颜色显示出来
 			//$("[data-index="+corectindex+"]").addClass("correct")
 			$("[data-index="+index+"]").addClass("error")

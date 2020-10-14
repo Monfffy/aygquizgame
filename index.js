@@ -45,7 +45,11 @@ function randomRender(){
 	currentTimu = tikuList.splice(randomIndex,1)[0];
 	console.log(currentTimu);
 	//获取页面标签题目，并把对象字符串中的quiz（题目）设置显示在页面上
-	$(".timu").html(currentTimu.quiz)
+	$(".timu").html(currentTimu.quiz);
+	//获取图片链接，显示在页面上
+      	$(".qimg").attr('src',currentTimu.qimg);
+    	//获取音频链接，显示在页面上
+    	$(".qaudio").attr('src',currentTimu.qaudio);
 	//每次执行清空一次
 	$(".options").html("");
 	//遍历题目对象字符串中的选择options内容           	   内容        索引

@@ -103,7 +103,7 @@ html,body{
   	width: 200px;
   	height: 150px;
 	display: none;
-        margin: 0 auto;
+        margin: auto;
 }
 .gaming .qaudio{
    	display: none;

@@ -55,7 +55,7 @@ function randomRender(){
     	if (currentTimu.qimg!="")
     	{
       	$(".qaudio").hide();
-      	$(".qimg").attr('src',currentTimu.qimg);
+      	$(".qimg").attr('src',currentTimu.qimage);
       	$(".qimg").show();
     	}
     	//获取音频链接，如果不为空则显示在页面上

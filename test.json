@@ -2,7 +2,7 @@
   {"qid":"2",
    "quiz":"\u8fd9\u662f\u54ea\u4e00\u9996\u6b4c\uff1f",
    "qimage":"",
-   "qaudio":"http://www.ayanga.club/quiz/m/1.mp3",
+   "qaudio":"",
    "qans":1,
    "options":["\u6843\u6e90","\u4eba\u6c11\u81f3\u4e0a","\u79e3\u9a6c","\u7784\u51c6"],
    "qstatus":1},
@@ -64,7 +64,8 @@
   {"qid":"20",
    "quiz":"\u8fd9\u662f\u54ea\u4e2aMV\u7684\u7247\u6bb5\uff1f",
    "qimage":"http://www.ayanga.club/quiz/i/20.png",
-   "qaudio":"","qans":4,
+   "qaudio":"",
+   "qans":4,
    "options":["\u6843\u6e90","\u4eba\u6c11\u81f3\u4e0a","\u79e3\u9a6c","\u7784\u51c6"],
    "qstatus":1}
 ]

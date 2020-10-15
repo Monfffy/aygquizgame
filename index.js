@@ -14,9 +14,9 @@ var inputName = "";
 $.get("test.json",function(res){
 	//用了jquery相当于res = JSON.parse(res.responseText)
 	//自动获取响应数据以字符串形式返回，不用自己多写这一句
-	console.log(res);
+	console.log(res)
 	//把获取到的所有数据放入数组中
-	tikuList = res;
+	tikuList = res
 })
 
 //首页图片淡出
@@ -26,13 +26,13 @@ $(".firstImg").click(function(){
 
 //点击准备好了按钮切换页面
 $(".readyBtn").click(function(e){
-	$(".startGame").addClass("active");
+	$(".startGame").addClass("active")
 })
 
 //点击开始答题按钮切换页面
 $(".startBtn").click(function(e){
-	$(".gaming").addClass("active");
-	$(".startGame").removeClass("active");
+	$(".gaming").addClass("active")
+	$(".startGame").removeClass("active")
 	//每次点击随机出个题目并显示在页面上
 	randomRender()
 })
@@ -52,10 +52,10 @@ function randomRender(){
     	$(".qaudio").hide();
     	
 	//获取图片链接，如果不为空则显示在页面上
-    	if (currentTimu.qimage!="")
+    	if (currentTimu.qimg!="")
     	{
       	$(".qaudio").hide();
-      	$(".qimg").attr('src',currentTimu.qimage);
+      	$(".qimg").attr('src',currentTimu.qimg);
       	$(".qimg").show();
     	}
     	//获取音频链接，如果不为空则显示在页面上

@@ -52,10 +52,10 @@ function randomRender(){
     	$(".qaudio").hide();
     	
 	//获取图片链接，如果不为空则显示在页面上
-    	if (currentTimu.qimg!="")
+    	if (currentTimu.qimage!="")
     	{
       	$(".qaudio").hide();
-      	$(".qimg").attr('src',currentTimu.qimg);
+      	$(".qimg").attr('src',currentTimu.qimage);
       	$(".qimg").show();
     	}
     	//获取音频链接，如果不为空则显示在页面上

@@ -25,4 +25,17 @@
       "qans" : 4,
       "qstatus" : 3
   }
+  {
+  "quiz" : "这是哪一首歌？",
+   "qimage" : "",
+   "qaudio" : "http://www.ayanga.club/quiz/m/18.mp3",
+    "options" : [
+        "桃源",
+        "人民至上",
+        "秣马",
+        "瞄准"
+    ],
+      "qans" : 2,
+      "qstatus" : 3
+  }
 ]

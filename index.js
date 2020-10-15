@@ -35,6 +35,8 @@ $(".startBtn").click(function(e){
 	$(".startGame").removeClass("active")
 	//每次点击随机出个题目并显示在页面上
 	randomRender()
+	//显示并开始倒计时
+    	timer = setInterval("CountDown()", 1000)
 })
 
 function randomRender(){
@@ -73,6 +75,26 @@ function randomRender(){
 		$(".options").append(`<div data-index="${index}">${index+1}.${item}</div>`)
 	})		
 }
+
+//倒计时
+function CountDown() {
+                if (maxtime >= 0) {
+                  msg = "你还有" + maxtime + "秒";
+                  document.all["timer"].innerHTML = msg;
+                       --maxtime;
+                } else{
+                  clearInterval(timer);
+                  //alert("时间到，结束!");
+                  //跳转结束页面
+                  $(".endGame").addClass("active")
+		  //获取得分标签,把上面累计的得分设置显示到页面上
+		  $(".score").html(score);
+                  //获取用户名,把用户名显示到页面上
+		  inputName = $("#inputName").val();
+                  $(".inputName").html(inputName);
+                }
+            }
+
 
 //选项的点击事件
 $(".options").click(function(e){

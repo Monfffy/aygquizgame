@@ -102,8 +102,11 @@ html,body{
 .gaming .qimg{
   	width: 150px;
   	height: 200px;
-	display: block;
+	display: none;
         margin: 0 auto;
+}
+.gaming .qaudio{
+  display : none;
 }
 .gaming .options>div{
 	margin: 10px 10px;

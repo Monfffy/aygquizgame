@@ -9,7 +9,7 @@
   {"qid":"6",
    "quiz":"\u8fd9\u662f\u54ea\u4e00\u9996\u6b4c\uff1f",
    "qimage":"",
-   "qaudio":".\/m\/6.mp3",
+   "qaudio":"http://www.ayanga.club/quiz/m/6.mp3",
    "qans":3,
    "options":["\u6843\u6e90","\u4eba\u6c11\u81f3\u4e0a","\u79e3\u9a6c","\u7784\u51c6"],
    "qstatus":1},

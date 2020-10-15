@@ -46,10 +46,26 @@ function randomRender(){
 	console.log(currentTimu);
 	//获取页面标签题目，并把对象字符串中的quiz（题目）设置显示在页面上
 	$(".timu").html(currentTimu.quiz);
-	//获取图片链接，显示在页面上
+	
+	//文本题默认隐藏图片和音频
+    	$(".qimg").hide();
+    	$(".qaudio").hide();
+    	
+	//获取图片链接，如果不为空则显示在页面上
+    	if (currentTimu.qimg!="")
+    	{
+      	$(".qaudio").hide();
       	$(".qimg").attr('src',currentTimu.qimg);
-    	//获取音频链接，显示在页面上
-    	$(".qaudio").attr('src',currentTimu.qaudio);
+      	$(".qimg").show();
+    	}
+    	//获取音频链接，如果不为空则显示在页面上
+   	if (currentTimu.qaudio!="")
+   	{
+        $(".qimg").hide();
+      	$(".qaudio").attr('src',currentTimu.qaudio);
+        $(".qaudio").show();
+    	}
+	
 	//每次执行清空一次
 	$(".options").html("");
 	//遍历题目对象字符串中的选择options内容           	   内容        索引

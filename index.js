@@ -139,7 +139,7 @@ $(".options").click(function(e){
 				isChoose = false;
 				randomRender()
 			}
-		},1000)
+		},250)
 	}
 	
 })

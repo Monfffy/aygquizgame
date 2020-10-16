@@ -7,9 +7,11 @@ var isChoose = false;
 var num = 10;
 // 倒计时时间，按秒计算
 var maxtime = 12; 
-
 //用户微博ID
 var inputName = "";
+
+$(".startGame").hide();
+$(".endGame").hide();
 
 //ajax获取题目内容
 //$.get("dati.json",function(res){

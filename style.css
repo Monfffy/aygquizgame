@@ -13,8 +13,8 @@ html,body{
 	background: skyblue;
 }
 .page{
-	/*width: 375px;*/
-	width: 100%;
+	width: 375px;
+	/*width: 100%;*/
 	height: 100%;
 	/*三个页面都重叠到一起*/
 	position: absolute;

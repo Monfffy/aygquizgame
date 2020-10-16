@@ -10,6 +10,9 @@ var maxtime = 12;
 //用户微博ID
 var inputName = "";
 
+var total = 0;
+var right = 0;
+
 $(".startGame").hide();
 $(".endGame").hide();
 $(".gaming").hide();
@@ -48,6 +51,7 @@ $(".startBtn").click(function(e){
 })
 
 function randomRender(){
+	total += 1;
 	//获取题库数组中，随机出的整数(pasetInt)索引值		parseInt方法       返回由字符串转换得到的整数。
 	var randomIndex = parseInt(Math.random()*tikuList.length);
 	//每次拿出一个题目放到一个对象里，并把这个题目从数组中删除
@@ -118,6 +122,7 @@ $(".options").click(function(e){
 		if(currentTimu.qans==(index+1)){
 			qs = currentTimu.qstatus;
 			score += 10*qs;
+			right += 1;
 			//把获取的索引添加正确的背景颜色
 			$("[data-index="+index+"]").addClass("correct")
 		}else{

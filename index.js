@@ -105,6 +105,8 @@ function CountDown() {
                   //获取用户名,把用户名显示到页面上
 		  inputName = $("#inputName").val();
                   $(".inputName").html(inputName);
+		  $(".right").html(right);
+                  $(".total").html(total);
                 }
             }
 

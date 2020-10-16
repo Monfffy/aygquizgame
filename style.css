@@ -69,7 +69,8 @@ html,body{
 }
 
 .startGame{
-	display: flex;
+	/*display: flex;*/
+	display: none;
 	justify-content: center;
 	align-items: center;
 }
@@ -91,6 +92,7 @@ html,body{
 	padding: 20px 20px;
 	/*justify-content: center;
 	align-items: center;*/
+	display: none;
 }
 .gaming h1{
 	margin: 20px 20px;
@@ -140,7 +142,7 @@ html,body{
 
 /*结束页面*/
 .endGame{
-	display: flex;
+	display: none;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -148,14 +150,7 @@ html,body{
 .endGame h1{
 	margin: 40px;
 }
-.endImg{
-	width: 300px;
-	/*display: flex;
-	justify-content: center;
-	align-items: center;*/
-	bottom: 0;
-	/*vertical-align: bottom;*/
-	}
+
 .reStart{
 	width: 200px;
 	height: 60px;

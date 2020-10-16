@@ -28,13 +28,16 @@ $(".firstImg").click(function(){
 
 //点击准备好了按钮切换页面
 $(".readyBtn").click(function(e){
+	$(".startGame").show();
 	$(".startGame").addClass("active")
 })
 
 //点击开始答题按钮切换页面
 $(".startBtn").click(function(e){
-	$(".gaming").addClass("active")
-	$(".startGame").removeClass("active")
+	$(".gaming").show();
+	$(".gaming").addClass("active");
+	$(".startGame").hide();
+	$(".startGame").removeClass("active");
 	//每次点击随机出个题目并显示在页面上
 	randomRender()
 	//显示并开始倒计时
@@ -88,6 +91,7 @@ function CountDown() {
                   clearInterval(timer);
                   //alert("时间到，结束!");
                   //跳转结束页面
+		  $(".endGame").show() 
                   $(".endGame").addClass("active")
 		  //获取得分标签,把上面累计的得分设置显示到页面上
 		  $(".score").html(score);
@@ -129,6 +133,7 @@ $(".options").click(function(e){
 		setTimeout(function(){
 			//答题数量结束了,切换到结束页面,否则切换到下一题
 			if(num==0){
+				$(".endGame").show() 
 				$(".endGame").addClass("active")
 				//获取得分标签,把上面累计的得分设置显示到页面上
 				$(".score").html(score);

@@ -42,9 +42,7 @@ html,body{
 	align-items: center;
 	flex-direction: column;
 }
-/*.rule h1{
-	margin: 40px;
-}*/
+
 .inputName{
         width: 200px;
 	height: 60px;
@@ -69,8 +67,8 @@ html,body{
 }
 
 .startGame{
-	/*display: flex;*/
-	display: none;
+	display: flex;
+	/*display: none;*/
 	justify-content: center;
 	align-items: center;
 }
@@ -92,7 +90,7 @@ html,body{
 	padding: 20px 20px;
 	/*justify-content: center;
 	align-items: center;*/
-	display: none;
+	/*display: none;*/
 }
 .gaming h1{
 	margin: 20px 20px;
@@ -142,7 +140,8 @@ html,body{
 
 /*结束页面*/
 .endGame{
-	display: none;
+	/*display: none;*/
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;

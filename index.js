@@ -12,6 +12,7 @@ var inputName = "";
 
 $(".startGame").hide();
 $(".endGame").hide();
+$(".gaming").hide();
 
 //ajax获取题目内容
 //$.get("dati.json",function(res){

@@ -22,7 +22,7 @@ html,body{
 	top: 0;
 	background: skyblue;
 	transform: translateX(375px);
-	transition: all 1s;
+	transition: all 0.2s;
 }
 
 .active{

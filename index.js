@@ -125,7 +125,7 @@ $(".options").click(function(e){
 		//每点击一次,答题的数量减1
 		num --;
 			
-		//延迟一秒进行切换
+		//延迟0.25s进行切换
 		setTimeout(function(){
 			//答题数量结束了,切换到结束页面,否则切换到下一题
 			if(num==0){

@@ -1,165 +1,68 @@
-*{
-	margin: 0;
-	padding: 0;
-	/*设置不会因为内边距和 边框撑开宽度和高度*/
-	box-sizing: border-box;
-}
-
-html,body{
-	/*溢出隐藏*/
-	overflow: hidden;
-	width: 100%;
+.d-none{
+        display: none;
+        }
+		
+.d-block{
+        display: block;
+        }
+		
+.background{
+	background-image: url('./assets/背景头图.png');
+	width: 300px;
 	height: 100%;
-	background: skyblue;
-}
-.page{
-	width: 375px;
-	/*width: 100%;*/
-	height: 100%;
-	/*三个页面都重叠到一起*/
-	position: absolute;
-	left: 0;
-	top: 0;
-	background: skyblue;
-	transform: translateX(375px);
-	transition: all 0.2s;
 }
 
-.active{
-	/*!important让这个权限变高覆盖上面的，进行偏移*/
-	transform: translateX(0px) !important;
+.message-box{
+background: #FFFFFF;
+border-radius: 18.75px;
+border-radius: 18.75px;
+width: 250px;
+height: 340px;
+position:relative;
+left:center;
+top: 55px;
 }
 
-.firstImg{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	}
-
-.rule{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+.w3-button{
+	background: url('./assets/矩形.png');
+	background: #FF9758;
+    box-shadow: 0 3px 5px 4px rgba(250,153,54,0.16);
+    border-radius: 18.75px;
+    border-radius: 18.75px;
 }
 
-.inputName{
-        width: 200px;
-	height: 60px;
-	font-size: 30px;
-	border: none;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	color: green;
-}
-.readyBtn{
-	width: 200px;
-	height: 60px;
-	line-height: 60px;
-	font-size: 30px;
-	border: none;
-	background: green;
-	color: #fff;
-	/*阴影不进行偏移 */
-	box-shadow: 0 0 30px green;
-	border-radius: 10px;
+.unionpage{
+	background: #FFFFFF;
+	border-radius: 18.75px;
+	border-radius: 18.75px;
+	width: 280px;
+	height: 365px;
+	position:relative;
+	left:center;
+	top: 55px;
 }
 
-.startGame{
-	display: flex;
-	/*display: none;*/
-	justify-content: center;
-	align-items: center;
-}
-.startBtn{
-	width: 200px;
-	height: 60px;
-	line-height: 60px;
-	font-size: 30px;
-	border: none;
-	background: green;
-	color: #fff;
-	/*阴影不进行偏移 */
-	box-shadow: 0 0 30px green;
-	border-radius: 10px;
+.timer{
+	font-size: 12.5px;
+	color: #666666;
 }
 
 .gaming{
-	background: coral;
-	padding: 20px 20px;
-	/*justify-content: center;
-	align-items: center;*/
-	/*display: none;*/
-}
-.gaming h1{
-	margin: 20px 20px;
-	font-size: 24px;
-	color: #fff;
-	/*justify-content: center;
-	align-items: center;*/
-}
-.gaming .timer{
-  	color:green;
+	background: rgba(255,255,255,0.92);
+	border-radius: 18.75px;
+	border-radius: 18.75px;
+	color: #FFFFFF 92%;
+	width: 250px;
+	height: 340px;
 }
 
-.gaming .qimg{
-  	width: 200px;
-  	height: 150px;
-	/*display: none;*/
-        margin:0 auto;
-}
-.gaming .qaudio{
-   	/*display: none;*/
-}
-.gaming .options>div{
-	margin: 10px 10px;
-	padding: 10px 10px;
-	color: #fff;
-	border-radius: 7px;
-	/*justify-content: center;
-	align-items: center;*/
+.timu{
+	font-size: 15px;
+	color: #333333;
 }
 
-/*正确显示的颜色*/
-.correct{
-	background: green;
-	/*justify-content: center;
-	align-items: center;
-	display: flex;
-	overflow: hidden;*/
-}
-/*错误显示的颜色*/
-.error{
-	background: red;
-	/*justify-content: center;
-	align-items: center;
-	display: flex;
-	overflow: hidden;*/
-}
-
-/*结束页面*/
-.endGame{
-	/*display: none;*/
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-.endGame h1{
-	margin: 20px;
-}
-
-.reStart{
-	width: 200px;
-	height: 60px;
-	line-height: 60px;
-	font-size: 30px;
-	border: none;
-	background: green;
-	color: #fff;
-	/*阴影不进行偏移 */
-	box-shadow: 0 0 30px green;
-	border-radius: 10px;
+.options{
+	background: #DCDCDC;
+	border-radius: 15.62px;
+	border-radius: 15.62px;
 }

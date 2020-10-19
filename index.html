@@ -1,47 +1,117 @@
-<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Quiz</title>
-		<meta name="viewport" content="width=375,user-scalable=no">
-		<meta name="referrer" content="no-referrer">
-		<link rel="stylesheet" type="text/css" href="style.css"/>
-	</head>
-	<body>
-		<!--初始化及规则页面-->
-		<div class="page rule active">
-	<h1>你的微博ID：<input type="text" id = "inputName" class="inputName"></h1>
-        <h1>游戏规则</h1>
-			<button class="readyBtn">准备好了</button>
+<head>
+    <meta charset="utf-8">
+    <title>阿云嘎大牧场</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- remove cache -->
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'> 
+    <link rel="stylesheet" href="./w3.css">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	
+    <script src="./jquery.js"></script>
+	<script src="./index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+	
+	<script>
+	  // Get the modal
+	  var modal = document.getElementById('id01');
+
+	  // When the user clicks anywhere outside of the modal, close it
+	  window.onclick = function(event) {
+		  if (event.target == modal) {
+			  modal.style.display = "none";
+		  }
+	  }
+	</script>
+    
+</head>
+<body onload="checkfirst();">
+
+<!-- The Modal Birthday Box -->
+<div id="id01" class="w3-modal">
+  <div class="message-box w3-modal-content w3-animate-opacity">
+  <div class="w3-container">
+    <span class="w3-button w3-display-topright" id="id01btn">&times;</span>
+	<p>写在前面 生日祝福</p>
+    <p>祝阿云嘎身体健康万事如意当一只快乐猪猪兔发大财永远年轻越来越多人喜欢成功实现自己的梦想想做什么事宇宙都会来帮</p>
+	<p>祝阿云嘎身体健康万事如意当一只快乐猪猪兔发大财永远年轻越来越多人喜欢成功实现自己的梦想想做什么事宇宙都会来帮</p>
+	<p>——DGG&IGP</p>
+  </div>
+  </div>
+</div>
+
+<!-- The Modal Name Input Box -->
+<div id="id02" class="w3-modal">
+  <div class="unionpage w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:500px">
+
+    <form class="w3-container" > <!--action="/action_page.php"> No action at this moment -->
+    <div class="w3-section">
+      <label><b>Username</b></label>
+      <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" id="inputName" name="name" required>
+      <input type="hidden" name="isNew" id="iisNew" value="1">
+
+      <label><b>Choose your Union</b></label>
+      <br>
+      <!-- section for zs/ns -->
+      <div class="w3-border w3-margin-bottom">
+        <input type="hidden" name="union" id="idunion" value="1">  
+        <div class="w3-container w3-cell w3-cell-middle">
+          <img src="zs.png" id="imgZS" class="w3-round w3-padding w3-center" alt="最帥" style="width:90%">
+        </div>
+
+        <div class="w3-container w3-cell w3-cell-middle">
+          <img src="ns.png" id="imgNS" class="w3-round w3-padding w3-center w3-opacity-max w3-hover-opacity-off" alt="最美" style="width:90%">
+        </div>
+      </div>
+      <button class="w3-button w3-block w3-section w3-padding" id="id02btnGo" type="button">Start</button>          
+    </div>
+    </form>
+
+    <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+      <button type="button" class="w3-button w3-red" id="id02btnCancel">Cancel</button>
+      <!--<span class="w3-right w3-padding w3-hide-small"><a href="#">Ranking</a></span>-->
+    </div>
+
+  </div>
+</div>
+
+
+<!-- The Game Main Box (define min max of the area) -->
+<div class="background w3-content w3-red w3-padding-16">
+    <!-- intro page -->
+		<div id="section01" class="d-block">
+			<div class="w3-container">			
+				<button type="button" class="w3-button w3-display-bottommiddle" id="s01btnGo">Start</button>
+			</div>
 		</div>
-		
-		<!--开始页面-->
-		<div class="page startGame">
-			<button class="startBtn">开始答题</button>
+		<!-- gaming page -->
+		<div id="section02" class="d-none ">
+			<div class="gaming">
+                <!--倒计时-->
+          		<div id="timer" class="timer"></div>
+				<!--题目-->
+                <h1 class="timu" id="timu">hi</h1>
+                <img class="qimg" src=""/>
+                <audio class="qaudio" controls id="qaudio" src=""></audio>
+				<!--选项-->
+				<div class="options"></div>
+			</div>
 		</div>
-		
-		<!--答题页面-->
-		<div class="page gaming">
-			<!--倒计时-->
-          		<div id="timer" class = "timer"></div>
-			<!--题目-->
-			<h1 class="timu"></h1>
-			<img class="qimg" src=""/>
-                        <audio class="qaudio" controls src=""></audio>
-			<!--选项-->
-			<div class="options"></div>
-			
+		<!-- waiting page -->
+		<div id="section03" class="d-none">
+			<div class="gaming w3-blue">
+				<!--题目-->
+				<div class="w3-container">
+              <h1 class="w3-center w3-animate-zoom">计分中</h1>
+              <h1 id="fenshu" class="w3-center w3-animate-zoom">...</h1>
+              <div class="w3-container" id="scoreboard">
+              </div>
+			  <button class="w3-button w3-block w3-green w3-section w3-padding" id="id03btnGo" type="button">Replay</button>  
+          </div>
+			</div>			
 		</div>
-		
-		<!--结束页面-->
-		<div class="page endGame">
-			<h1>恭喜<span class="inputName">电子小羊</span>获取：<span class="score">100</span>分</h1>
-			<h1>共答题<span class = "total"></span>道</h1>
-                        <h1>答对了<span class = "right"></span>道</h1>
-			<button class="reStart">重新答题</button>
-		</div>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="jquery.js"></script>
-		<script src="index.js"></script>
-	</body>
+</div>
+</body>
 </html>

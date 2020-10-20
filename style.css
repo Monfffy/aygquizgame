@@ -47,7 +47,7 @@ top: 100px;
 
 .timer{
 	font-size: 12.5px;
-	color: #666666;
+	color: #FF9758;
 }
 
 .gaming{
@@ -56,6 +56,7 @@ top: 100px;
 	border-radius: 18.75px;
 	color: #FFFFFF 92%;
 	width: 80%;
+	height: 355px;
 	position:relative;
 	left:40px;
 	top:150px;
@@ -70,4 +71,5 @@ top: 100px;
 	background: #DCDCDC;
 	border-radius: 15.62px;
 	border-radius: 15.62px;
+	height: 30px;
 }
